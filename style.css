@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+body{
+    
+    background-color:rgba(250, 235, 215, 0.5);
+}
+.menuTable{
+    background-color:rgba(250, 235, 215, 1);
+
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    transition: 2s;
+    
+}
+.menuTable a
+{
+    display: inline-block;
+    color: black /* Цвет обычной ссылки */
+    line-height: 1;
+    text-decoration: none; /* Убираем подчеркивание */
+    cursor: pointer;
+}
+
+.menuTable a:after {
+    background-color: green; /* Цвет линии при наведении на нее курсора мыши */
+    display: block;
+    content: "";
+    height: 2px; /* Высота линии */
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+.menuTable a:hover:after,
+.menuTable a:focus:after {
+    width: 100%;
+   
+}
+.menuTable a:hover
+{
+    color:green;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.recipe{
+    display: flex;
+    width: 80%;
+    max-width: 350px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 25px;
+    margin-bottom: 25px;
+}
+.recipe a{
+    color: black;
+}
+
+.recipe a:hover
+{
+    color:green;
+}
+.recipe img{
+    width: 100%;
+    border-radius: 10px;
+ 	transition: 2s; /* ����� ������� */
+  	display: block; 
+}
+.recipe h4{
+    margin-bottom: 2%;
+}
+.recipe img:hover{
+	transform: rotateY(180deg);
+}
+.main{
+    padding: 10px;
+    padding-top:18px;
+}
+.hr{
+    width: 97%;
+}
+.menu-a{
+    color: black;
+}
+.main{
+    padding: 15px;
+}
+
+.receptInfo{
+    padding:20px;
+}
+.receptInfo li{
+    margin-left: 8px;
+}
+ul li{
+    margin-left: 30px;
+}
+.receptInfo h4{
+    margin-left: -15px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.receptInfo p{
+    text-align: justify;
+    margin-left: -15px;
+    margin-bottom: 15px;
+}
+
+.centeredText{
+    vertical-align: middle;
+    text-align: center;
+    
+}
+.title{
+    font-family: Roboto;
+    font-size: 2em;
+    color: green;
+}
+.logo{
+    background:url("header.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.menuElement{
+    width:96%;
+}
+.newRecept{
+    border: 1px solid wheat;
+    box-shadow: 0px 0px 4px 2px lightgray;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px 2px lightgray;
+}
+.newRecept img{
+    margin-top: 2px;
+    border-radius: 0 0 5px 5px;
+}
+a{
+    text-decoration: none;
+}
+.newRecept a img{
+    position: relative;
+    bottom: -5px;
+}
+small{
+    position: relative;
+    top: 2px;
+    color: black;
+}
+
+.main{
+    background-color:rgba(250, 235, 215, 0.5);
+}
+
+
+.recept{
+    color: #D84C00;
+}
+.recept h3{
+    border-radius: 5px 20px 0px 0px;
+    border: 3px solid #e39915;
+    border-right: 5px solid #e39915;
+    border-top: 5px solid #e39915;
+    background-color: #F8ECC7;
+    padding: 4px;
+}
+.tableCenter{
+    margin: 0 auto;
+    padding-top: 10px;
+}
+.receptDescription{
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-right: 5px solid #e39915;
+    border-bottom: 5px solid #e39915;
+    border-radius: 0 0 20px 0;
+}
+.receptImgbox{
+    border-left: 3px solid #e39915;
+    border-bottom: 5px solid #e39915;
+    border-right: 1px solid lightcoral;
+}
+.receptImg{
+    border-radius: 10px;
+    padding: 5px;
+}
+nav {
+    background-color: rgba(250, 235, 215, 1);
+    color: green;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 2px;
+    border-color: black;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+nav ul li {
+    margin-right: 10px;
+}
+nav ul li a {
+   
+    color: green;
+    text-decoration: none;
+    padding: 10px 10px;
+    display: block;
+}
