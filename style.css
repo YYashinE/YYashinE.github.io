@@ -204,8 +204,10 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    border: 2px;
-    border-color: black;
+    bottom: 0;
+    margin-top: 55px;
+    position:static;
+    width: 100%;
 }
 nav ul {
     list-style-type: none;
